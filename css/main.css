@@ -1,0 +1,251 @@
+
+body{
+    font-family: 'Rubik', sans-serif;
+    background: url("https://www.estidia.eu/wp-content/uploads/2018/04/Savin-NY-Website-Background-Web.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.wrapper{
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.text-right{
+  text-align: right;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+.screens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+.screens h3{
+    font-size: 60px;
+    margin-bottom: 40px;
+    color: #003049;
+    font-weight: 700;
+}
+.screens input[type=range]{
+  margin-bottom: 40px;
+}
+.screens button{
+    font-size: 30px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    background: #eae2b7;
+    border: none;
+    display: inline-block;
+}
+.input{
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    padding: 0 20px;
+    background: white;
+    font-size: 35px;
+}
+.screen-final .input{
+  font-size: 25px;
+  background: grey;
+  margin-bottom: 0px;
+  padding: 20px auto;
+}
+.form-switch .form-check-input{
+  width: 100px;
+  height: 50px;
+}
+.form-check-label{
+  font-size: 40px;
+  flex-basis: 100%;
+  line-height: 1.1;
+}
+.form-switch{
+  display: flex;
+  width: 600px;
+  align-items: center;
+}
+
+.main-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    position: relative;
+    z-index: 10;
+}
+.steps-list{
+    display: inline-flex;
+    list-style-type: none;
+}
+.steps-list li{
+    background-color: red;
+    content: "Red";
+    width: 10vw;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.steps-list li:hover{
+  background: grey !important;
+}
+
+
+
+.screen-one{
+    display: flex;
+}
+.screen-two{
+    display: none;
+}
+.screen-two p{
+    font-size: 24px;
+}
+.screen-three{
+    display: none;
+}
+.screen-four{
+    display: none;
+}
+.screen-final{
+  display: none;
+}
+
+.screen-final .outputData,.propInfo{
+  margin-bottom: 50px;
+  padding: 50px;
+  border-radius: 15px;
+  width: 80%;
+  background: white;
+  -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 2px 5px 16px 0px #0B325E, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+.screen-final table{
+  width: 100%;
+}
+.screen-final th,td{
+  font-size: 25px;
+}
+.screen-final td{
+  padding: 20px 0;
+  width: 18.75%;
+  text-align: center;
+}
+.screen-final th{
+  padding: 20px 0;
+  width: 25%;
+  text-align: center;
+}
+.propInfo{
+  font-size: 25px;
+}
+.changeable{
+  background: grey;
+}
+
+
+
+input[type=range] {
+    width: 30vw;
+    margin: 13px 0;
+    background-color: transparent;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    background: #404a70;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -13.2px;
+    width: 16px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #424c73;
+  }
+  input[type=range]::-moz-range-track {
+    background: #404a70;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 16px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 13px 0;
+    color: transparent;
+    width: 100%;
+    height: 10px;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #3e486d;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #404a70;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+  }
+  input[type=range]::-ms-thumb {
+    width: 16px;
+    height: 36px;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #404a70;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #424c73;
+  }
+  /*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
+  how to remove the virtical space around the range input in IE*/
+  @supports (-ms-ime-align:auto) {
+    /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
+    input[type=range] {
+      margin: 0;
+      /*Edge starts the margin from the thumb, not the track as other browsers do*/
+    }
+  }
